@@ -64,3 +64,5 @@ os.rename(gradle_path_modified, gradle_path)
 
 os.remove(toml_file)
 os.rename(toml_file_modified, toml_file)
+
+# need to do the .java mods

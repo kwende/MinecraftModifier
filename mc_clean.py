@@ -32,7 +32,7 @@ mod_id_template = 'modid'
 # vendor_name = input(f"vendor ({vendor_template}):")
 # display_name = input(f"Display name: (Example Mod)")
 
-group_name = "com.benrush.mc"
+group_name = "com.ibenrush.mc"
 group_name_parts = group_name.split('.')
 mod_name = "judemod"
 vendor_name = "bluestone"
@@ -80,7 +80,7 @@ if os.path.exists(java_file):
             for line in lines:
                 new_line = line
                 if "package com.example.examplemod;" in line:
-                    new_line = f"package {group_name}"
+                    new_line = f"package {group_name};"
                 elif '@Mod("examplemod")' in line:
                     new_line = line.replace("examplemod", mod_name.lower())
                 elif "ExampleMod" in line:
